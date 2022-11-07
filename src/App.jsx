@@ -1,11 +1,12 @@
- import avatar from './avatar.jpg'
- 
- function App() {
+import avatar from './avatar.jpg'
+import logo from './frame.jpg'
+import './App.css'
+function App() {
   return (
-    <div className="App">
-      <div className="nav">
+    <div className="App padding-default">
+      <div className="nav ">
         <div className="nav-item">
-             <img src=""  className="logo" />
+             <img src={logo}  className="logo" />
              <ul>
                <li>
                  <a href="#">Collections</a>
@@ -32,8 +33,9 @@
         <div className="profile-section">
           <i class="fa-solid fa-cart-shopping"></i>
           <img src={avatar} alt="" className="profilephoto" />
-        </div>
+        </div>     
       </div>
+      <div className="divider"></div>   
     </div>
   );
 }
